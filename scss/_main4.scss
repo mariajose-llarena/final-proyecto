@@ -1,0 +1,86 @@
+.main4 {
+  h2 {
+    text-align: center;
+    background-color: $principal-color ;
+    color: $titulo-color;
+    padding: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+   }
+    .container {
+      h3 {
+        padding: 20px;
+        margin-top: 80px;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $primer-complementario;
+      }
+
+      p {
+        padding: 20px;
+      
+      .text-nos {
+        text-align: center;
+        text-align: justify;
+        padding: auto
+        
+      }
+    }
+  }
+
+    .container {
+    display: flex; // Usar flexbox para las columnas
+    justify-content: space-between; // Espacio entre columnas
+    padding: 20px; // Espaciado alrededor del contenedor
+  }
+
+// Estilo para cada columna
+      .column {
+        flex: 1; // Cada columna ocupa el mismo espacio
+        margin: 0 10px; // Margen horizontal entre columnas
+        background-color: $color-claro; // Color de fondo claro
+        border-radius: 5px; // Bordes redondeados
+        padding: 15px; // Espaciado interno
+        border: 6px double $principal-color;
+
+         h4 {
+          text-align: center; // Centrar el título
+          color: #333; // Color del texto del título
+         }
+
+         ul {
+             list-style-type: none; // Eliminar viñetas de la lista
+             padding: 0; // Eliminar relleno por defecto
+
+             li {
+                 background-color: #1143587d; // Color de fondo para los ítems
+                 margin-bottom: 10px; // Espacio entre ítems
+                 padding: 10px; // Espaciado interno en los ítems
+                 border-radius: 3px; // Bordes redondeados en los ítems
+                 color: white;
+                 
+
+                 &:last-child {
+                   margin-bottom: 0; // Sin margen en el último ítem
+                 }
+         }
+    }
+}
+
+// Media Query para pantallas pequeñas
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; // Cambiar a columna en pantallas pequeñas
+
+        .column {
+            margin-bottom: 20px; // Espacio entre columnas en vista móvil
+
+            &:last-child {
+              margin-bottom: 0; // Sin margen en la última columna
+            }
+        }
+    }
+}
+  
+}

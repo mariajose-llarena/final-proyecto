@@ -1,0 +1,146 @@
+.main1 {
+
+      
+  .section-img-bandera {
+    height: auto;
+    padding: 20px; 
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    background-color: $segundo-complementario;
+    width: 100%;
+
+    // Media query para pantallas pequeñas
+    @media (max-width: 768px) { 
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+ }
+
+  .primerImagen {
+      display: block;
+     padding: 20px;
+     margin-right: 10px;
+     border-radius: 5px;
+     max-width: 100%; 
+    height: auto;
+  }
+
+  .tran1 {
+      margin: 0rem;
+     background-color: $segundo-complementario;
+      transition: all 2s;
+     padding: 20px; 
+      font-size: medium;
+  }
+      .tran1:hover {
+        background-color: #fc950461;
+        color: $principal-color;
+        font-size: large;
+      
+      } 
+
+  //nosotros
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      .subtitulo.h2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+        padding: 60px;
+      }
+      
+      .image {
+        width: 20%; 
+        height: auto; 
+        max-width: 250px; 
+        border-radius: 100%;
+        object-fit: cover;
+    
+      }
+
+    
+      
+      .text {
+        text-align: center;
+        padding: 32px;
+        font-weight: 200;
+        
+      }
+
+      h3.name{
+        font-size: 30px;
+        text-decoration: overline;
+        padding: 0
+    ;
+      }
+
+      .tran2{
+        transition: all 2s;
+      }
+
+      .tran2:hover { 
+        background-color: #fc950461;
+        color: $principal-color;
+        font-size: large;
+      }
+
+      h2 {
+        color: $titulo-color;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 10px;
+        background: $principal-color;
+        width: 100vw; 
+        height: auto; 
+      }
+      
+      }
+      
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 20px;
+      }
+      
+
+
+ //SERVICIOS
+    .container {
+        h2.subtitulo.h2 {
+            font-size: 1.5rem; 
+            color: $sub-color; 
+            margin-bottom: 1rem;
+            font-weight:bold;
+            text-align: center;
+        }
+        .services-list {
+            display: flex;
+            flex-wrap: wrap; 
+            flex-direction: column;
+            padding: 40px;
+
+            .service {
+                background-color:$primer-complementario;
+                padding: 15px 20px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                text-decoration: none;
+                color: $titulo-color;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 20px;
+             
+                &:hover {
+                    background-color: #e28606;
+                    color: $hover-color; 
+                    border: black;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
